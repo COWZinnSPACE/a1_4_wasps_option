@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="device_forever" id="yZKLye)8uH3l?#iFqN@c" x="0" y="0"><statement name="HANDLER"><block type="controls_if" id=",HS_}4s%+Fs~OEk^ICsx"><mutation elseif="1" else="1"/><comment>Holding down the A button makes the straight-mouth face become a smiley face. Holding the B button down makes the straight-mouth face become a frown face. The face returns to a straight-mouth face whenever a button is released.</comment><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="device_get_button2" id="KwZuzAq5B1AHNq$gV4Dy"><field name="NAME">Button.A</field><comment>Holding the A button down shows a smiley face.</comment></block></value><statement name="DO0"><block type="device_show_leds" id="im^(|2_l%|{?WgS2$%!w"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # .
+        `</field></block></statement><value name="IF1"><block type="device_get_button2" id="EuWLHn!X,4+I9ICFAy;6"><field name="NAME">Button.B</field><comment>Holding the B button down shows a frown face.</comment></block></value><statement name="DO1"><block type="device_show_leds" id="!W7nPQj+Sf5+*Jv0W|j^"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="7y*(^fPQ=RiE}NC@(6Tt"><field name="LEDS">`
+        . # . # . 
+        . # . # . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field><comment>If no buttons are pressed, a straight-mouth face is shown on the LED grid.</comment></block></statement></block></statement></block></xml>
